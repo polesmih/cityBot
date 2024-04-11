@@ -1,7 +1,7 @@
 # cityBot (java)  
 Telegram-бот игра в города.   
 
-Бот в Telegram: [@BodyMI_bot](https://t.me/CityQuizGame_bot)  
+Бот в Telegram: [@CityQuizGame_bot](https://t.me/CityQuizGame_bot)  
  
 
 ## Лицензия  
