@@ -79,10 +79,9 @@ public class MessagesConst {
     public final static String UNKNOWN = "Неизвестный запрос... " +
             EmojiParser.parseToUnicode(":thinking:");
 
-    public final static String ABOUT_A = "Этот проект создан для развития памяти. " +
-            "\n\nЕсли нужно отдохнуть и расширить кругозор, " +
-            "приглашаем воспользоваться ботом " +
-            "\n<a href=\"https://t.me/GalleryTrip_bot\">Сам себе галерист</a>";
+    public final static String ABOUT_A = "Если хочешь проверить свои знания в искусстве," +
+            "\nприглашаем воспользоваться ботом " +
+            "\n<a href=\"https://t.me/ArtQuizzes_bot\">Игра \"Викторина\"</a>";
 
     public final static String ABOUT_B = "\nЕсли нужно заняться делами, " +
             "\nприглашаем воспользоваться ботом " +

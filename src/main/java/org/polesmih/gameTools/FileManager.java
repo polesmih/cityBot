@@ -19,10 +19,6 @@ public class FileManager {
         return Paths.get(settings.getPathUsers() + userId + ".txt");
     }
 
-    public static boolean existsFile(Long userId) {
-        return Files.exists(getPathUserFile(userId));
-    }
-
     @SneakyThrows
     public static void createFile(Long userId) {
         File userFile = new File(settings.getPathUsers() + userId + ".txt");
