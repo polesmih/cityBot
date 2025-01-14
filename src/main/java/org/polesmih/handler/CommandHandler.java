@@ -61,6 +61,9 @@ public class CommandHandler extends TelegramLongPollingBot {
                 sendMessage.setReplyMarkup(new ButtonKeyboard().createKeyboard());
                 execute(sendMessage);
 
+            } else if (messageText.equals(RULES.getCommandType())) {
+                execute(Sender.sendMessage(chatId, INSTRUCTION));
+
             } else if (messageText.equals(DONATE.getCommandType())) {
                 execute(Sender.sendMessage(chatId, DOG_SHELTER));
 

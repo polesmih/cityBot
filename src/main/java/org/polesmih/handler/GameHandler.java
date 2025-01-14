@@ -62,10 +62,6 @@ public class GameHandler extends TelegramLongPollingBot {
             if (userCity.matches("[\\p{L} .'-]+")) {
 
                 // если файл пользователя существует и он не пустой
-//                if (FileManager.existsFile(from.getId())
-//                ) {
-
-                // и он не пустой
                 if (!ListManager.userListIsEmpty(ListManager.createUserLinesCity(from.getId()))) {
 
 /* Мы используем метод lines класса Files для создания потока строк в файле,

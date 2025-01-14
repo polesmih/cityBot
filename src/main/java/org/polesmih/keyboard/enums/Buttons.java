@@ -4,8 +4,9 @@ public enum Buttons {
 
     NEW("Начать игру"),
     FINISH("Завершить игру"),
-    RULES("Правила игры"),
-    RESULT("Мои достижения");
+    CURRENT("Текущий результат"),
+    PROGRESS("Мои достижения");
+
 
     private final String buttonType;
 

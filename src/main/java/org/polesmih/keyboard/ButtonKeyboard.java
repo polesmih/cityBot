@@ -16,14 +16,13 @@ public class ButtonKeyboard {
         row1.add(FINISH.getButtonType());
 
         KeyboardRow row2 = new KeyboardRow();
-        row2.add(RULES.getButtonType());
-        row2.add(RESULT.getButtonType());
+        row2.add(CURRENT.getButtonType());
+        row2.add(PROGRESS.getButtonType());
 
-        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
-        replyKeyboardMarkup.setKeyboard(Arrays.asList(row1, row2));
-        replyKeyboardMarkup.setResizeKeyboard(true);
-
-        return replyKeyboardMarkup;
+        return ReplyKeyboardMarkup.builder()
+                .keyboard(Arrays.asList(row1, row2))
+                .resizeKeyboard(true)
+                .build();
     }
 
 }

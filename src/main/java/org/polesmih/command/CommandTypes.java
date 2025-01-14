@@ -13,6 +13,7 @@ public class CommandTypes {
         Set<String> types = new HashSet<String>();
         types.add(START.getCommandType());
         types.add(KEY.getCommandType());
+        types.add(RULES.getCommandType());
         types.add(DONATE.getCommandType());
         types.add(INFO.getCommandType());
 

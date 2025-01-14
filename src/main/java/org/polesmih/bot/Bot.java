@@ -11,14 +11,12 @@ import org.polesmih.command.CommandTypes;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.commands.SetMyCommands;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
-import org.telegram.telegrambots.meta.api.objects.Message;
 import org.telegram.telegrambots.meta.api.objects.Update;
-import org.telegram.telegrambots.meta.api.objects.User;
 import org.telegram.telegrambots.meta.api.objects.commands.scope.BotCommandScopeDefault;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 import static org.polesmih.bot.settings.MessagesConst.*;
-import static org.polesmih.command.BotCommands.LIST_OF_COMMAND;
+import static org.polesmih.command.BotCommands.*;
 
 
 public class Bot extends TelegramLongPollingBot {

@@ -4,8 +4,10 @@ public enum Commands {
 
     START ("/start"),
     KEY ("/key"),
-    DONATE ("/donate"),
-    INFO ("/info");
+    RULES("/rules"),
+    INFO ("/info"),
+    DONATE ("/donate");
+
 
     private final String commandType;
 
