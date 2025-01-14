@@ -12,8 +12,8 @@ public class ButtonTypes {
         Set<String> types = new HashSet<String>();
         types.add(NEW.getButtonType());
         types.add(FINISH.getButtonType());
-        types.add(RULES.getButtonType());
-        types.add(RESULT.getButtonType());
+        types.add(CURRENT.getButtonType());
+        types.add(PROGRESS.getButtonType());
 
         return types;
     }

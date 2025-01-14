@@ -85,11 +85,12 @@ public class ButtonHandler extends TelegramLongPollingBot {
                 execute(Sender.sendMessage(chatId, GAME_OVER));
 
 
-            } else if (messageText.equals(RULES.getButtonType())) {
-                execute(Sender.sendMessage(chatId, INSTRUCTION));
+            } else if (messageText.equals(CURRENT.getButtonType())) {
+                execute(Sender.sendMessage(chatId,
+                        "Твое количество городов в текущей сессии игры: " + ListManager.countUserWord(from.getId())));
 
 
-            } else if (messageText.equals(RESULT.getButtonType())) {
+            } else if (messageText.equals(PROGRESS.getButtonType())) {
 
                 String query = "SELECT date, user_count FROM visits WHERE user_id = " + from.getId();
                 Statement statement = DbConnection.getConnection().createStatement();
